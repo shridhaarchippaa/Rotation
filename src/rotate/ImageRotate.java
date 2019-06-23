@@ -10,8 +10,8 @@ import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 
 public class ImageRotate {
-	public static final int ROTATE_LEFT = -1;
-	public static final int ROTATE_RIGHT = 1;
+	public static final int ANTI_CLOCKWISE = -1;
+	public static final int CLOCKWISE = 1;
 
 	public static void rotate(File input, File output, int angle) {
 		try {
@@ -27,7 +27,7 @@ public class ImageRotate {
 			BufferedImage rotatedImage = new BufferedImage(height, width, bufferedImage.getType());//Buffer to store the rotated image
 			for(int y=0; y<height; y++) {
 				for(int x=0; x<width; x++) {
-					if(angle == ROTATE_LEFT) 
+					if(angle == ANTI_CLOCKWISE) 
 						rotatedImage.setRGB(y, (width - 1) - x, bufferedImage.getRGB(x, y));
 					else  
 						rotatedImage.setRGB((height - 1) - y, x, bufferedImage.getRGB(x, y));

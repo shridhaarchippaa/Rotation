@@ -10,8 +10,8 @@ public class TestRotate {
 		File input = new File("C:\\Shridhaar\\Personal\\Pics\\24.jpg");
 		File output = new File("C:\\Shridhaar\\Personal\\Pics\\rotate.jpg");
 		
-//		ImageRotate.rotate(input, output, ImageRotate.ROTATE_LEFT);
-		ImageRotate.rotate(input, output, ImageRotate.ROTATE_RIGHT);
+//		ImageRotate.rotate(input, output, ImageRotate.ANTI_CLOCKWISE);
+		ImageRotate.rotate(input, output, ImageRotate.CLOCKWISE);
 		
 		long endTime = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
