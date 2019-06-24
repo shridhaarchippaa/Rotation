@@ -7,8 +7,8 @@ public class TestRotate {
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 
-		File input = new File("C:\\Shridhaar\\Personal\\Pics\\24.jpg");
-		File output = new File("C:\\Shridhaar\\Personal\\Pics\\rotate.jpg");
+		File input = new File("C:\\Users\\shridhaar.chippaa\\eclipse-workspace\\Rotation\\WebContent\\24.jpg");
+		File output = new File("C:\\Users\\shridhaar.chippaa\\eclipse-workspace\\Rotation\\WebContent\\rotate.jpg");
 		
 //		ImageRotate.rotate(input, output, ImageRotate.ANTI_CLOCKWISE);
 		ImageRotate.rotate(input, output, ImageRotate.CLOCKWISE);
